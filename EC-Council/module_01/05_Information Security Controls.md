@@ -1,7 +1,3 @@
-# CEH Module 06: Information Security Controls
-
----
-
 ## 🛡️ Information Assurance (IA)
 
 **Definition:**  
