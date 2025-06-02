@@ -1,4 +1,4 @@
-## 🌐 Information Security
+## 🌐 Information Security Overview
 
 Information Security involves protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction to provide:
 
