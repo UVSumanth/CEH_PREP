@@ -98,20 +98,15 @@ A tool to scale and visualize risks based on:
 
 ## 🔐 Risk Management Phases
 
-1. **Risk Identification**  
-   - Pinpoint internal/external risks, their sources, and potential consequences.
+1. **Risk Identification** - Pinpoint internal/external risks, their sources, and potential consequences.
 
-2. **Risk Assessment**  
-   - Estimate likelihood and impact of risks; prioritize responses.
+2. **Risk Assessment** - Estimate likelihood and impact of risks; prioritize responses.
 
-3. **Risk Treatment**  
-   - Apply appropriate controls to reduce identified risks.
+3. **Risk Treatment** - Apply appropriate controls to reduce identified risks.
 
-4. **Risk Tracking**  
-   - Monitor implemented controls and detect emerging risks.
+4. **Risk Tracking** - Monitor implemented controls and detect emerging risks.
 
-5. **Risk Review**  
-   - Evaluate strategy effectiveness and adjust as necessary.
+5. **Risk Review** - Evaluate strategy effectiveness and adjust as necessary.
 
 ---
 
