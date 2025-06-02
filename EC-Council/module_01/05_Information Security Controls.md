@@ -36,26 +36,19 @@ IA and IRM work together to:
 
 ## 🔄 Key IA Processes
 
-1. **Policy & Guidance Development**  
-   - Establish security rules, standards, and baselines.
+1. **Policy & Guidance Development** - Establish security rules, standards, and baselines.
 
-2. **Network & Authentication Design**  
-   - Create secure architectures and robust authentication systems.
+2. **Network & Authentication Design** - Create secure architectures and robust authentication systems.
 
-3. **Vulnerability Assessment**  
-   - Identify, evaluate, and prioritize vulnerabilities in networks/systems.
+3. **Vulnerability Assessment** - Identify, evaluate, and prioritize vulnerabilities in networks/systems.
 
-4. **Problem Identification & Resource Planning**  
-   - Detect system flaws, allocate security resources effectively.
+4. **Problem Identification & Resource Planning** - Detect system flaws, allocate security resources effectively.
 
-5. **Applying IA Controls**  
-   - Deploy safeguards aligned to risk severity.
+5. **Applying IA Controls** - Deploy safeguards aligned to risk severity.
 
-6. **Certification & Accreditation (C&A)**  
-   - Ensure security compliance and validate risk mitigation effectiveness.
+6. **Certification & Accreditation (C&A)** - Ensure security compliance and validate risk mitigation effectiveness.
 
-7. **Training & Awareness**  
-   - Promote cybersecurity understanding across all user levels.
+7. **Training & Awareness** - Promote cybersecurity understanding across all user levels.
 
 ---
 
