@@ -1,4 +1,3 @@
-
 ## 📘 CEH Hacking Methodology
 
 A structured, step-by-step process to perform ethical hacking. Each phase represents a stage in an attacker's lifecycle:
