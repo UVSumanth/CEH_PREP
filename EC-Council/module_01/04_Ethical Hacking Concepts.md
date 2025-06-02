@@ -5,7 +5,6 @@ Ethical hacking is the **practice of using computer and network skills to test a
 It is performed by professionals known as **white hat hackers**, who operate with proper authorization to improve security rather than exploit it.
 
 ---
-
 ## 🚨 Why is Ethical Hacking Necessary?
 
 Organizations hire ethical hackers to:
