@@ -92,5 +92,6 @@ The Cyber Kill Chain is **essential for understanding and disrupting** adversary
 
 ---
 Make sure to complete below Rooms as well
-[Windows Local Persistence](https://tryhackme.com/room/windowslocalpersistence)
-[OWASP Top 10 - TryHackMe Room](https://tryhackme.com/room/owasptop10)
+>[Windows Local Persistence](https://tryhackme.com/room/windowslocalpersistence)
+
+>[OWASP Top 10 - TryHackMe Room](https://tryhackme.com/room/owasptop10)
