@@ -64,7 +64,7 @@ Footprinting helps **assess the risk** associated with the data a company has ex
 
 ---
 
-![Footprinting Methodology](EC-Council/module_02/images/Footprinting Methodology.png)
+![Footprinting Methodology](images/Footprinting%Methodology.png)
 
 ✅ **Checkpoint:** You should now be able to:
 - Explain the goal and methodology of footprinting.
