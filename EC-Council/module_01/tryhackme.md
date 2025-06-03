@@ -91,7 +91,14 @@ The Cyber Kill Chain is a framework developed by **Lockheed Martin** in 2011, ba
 The Cyber Kill Chain is **essential for understanding and disrupting** adversary actions. While it has limitations, it provides a foundation for securing systems and building layered defenses. Combine it with **MITRE ATT&CK** and real-time threat intelligence for effective protection.
 
 ---
-Make sure to complete below Rooms as well
+## Make sure to complete below Rooms as well
 >[Windows Local Persistence](https://tryhackme.com/room/windowslocalpersistence)
 
 >[OWASP Top 10 - TryHackMe Room](https://tryhackme.com/room/owasptop10)
+
+## References |Go Through When have a chance
+- https://www.varonis.com/blog/what-is-osint
+- https://www.trustedsec.com/blog/intro-to-macros-and-vba-for-script-kiddies
+- https://attack.mitre.org/tactics/TA0011/
+- https://www.csoonline.com/article/569163/cybercriminal-group-mails-malicious-usb-dongles-to-targeted-companies.html
+- https://www.offsec.com/metasploit-unleashed/persistent-backdoors/
