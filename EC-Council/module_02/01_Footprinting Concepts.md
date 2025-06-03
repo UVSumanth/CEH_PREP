@@ -63,9 +63,10 @@ Footprinting helps **assess the risk** associated with the data a company has ex
 | **Business Loss**      | Reputation damage, client trust loss, or regulatory penalties due to exposed weaknesses. |
 
 ---
-
+## Footprinting Methodology
 ![Footprinting Methodology](images/FootprintingMethodology.png)
 
+---
 ✅ **Checkpoint:** You should now be able to:
 - Explain the goal and methodology of footprinting.
 - Differentiate between active and passive methods.
