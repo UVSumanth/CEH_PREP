@@ -61,6 +61,8 @@ TCP is a **connection-oriented protocol** using flags to control communication b
 
 This sequence ensures both parties are ready for data transmission.
 
+![3 way handshake](images/3wayhandshake.png)
+
 ### 🔚 TCP Termination
 
 - Sender sends **FIN** → Receiver sends **ACK** and own **FIN**
@@ -69,6 +71,8 @@ This sequence ensures both parties are ready for data transmission.
 OR
 
 - Sender sends **RST** for abrupt termination
+
+![TCP session termination](images/TCPsessiontermination.png)
 
 ---
 
