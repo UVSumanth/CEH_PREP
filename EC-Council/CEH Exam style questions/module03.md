@@ -64,3 +64,41 @@ Answer: ✅ B. hping3 <Target IP> -Q -p 139
 Reason: The -Q flag tells hping3 to collect ISNs, useful in hijacking.
 
 ----
+
+**Q4.** Which hping3 command would you use to simulate a TCP SYN flood DoS attack on port 22 of a target?  
+A. hping3 -A -p 22 --flood  
+B. hping3 -S <target> -p 22 --flood  
+C. hping3 -2 <target> -p 22  
+D. hping3 -9 http -I eth0  
+✅ Correct Answer: B
+
+---
+
+**Q5.** Which result from a UDP scan indicates a closed port on the target system?  
+A. No reply from the target  
+B. ICMP Port Unreachable message received  
+C. RST packet received  
+D. SYN-ACK response  
+✅ Correct Answer: B
+
+---
+
+**Q6**. What is the primary benefit of using a SYN scan over a full TCP connect scan in a penetration test?  
+A. Higher packet payload  
+B. Guaranteed port enumeration  
+C. Lower chance of detection by security systems  
+D. Better for scanning mobile networks  
+✅ Correct Answer: C
+
+---
+
+**Q7.** What information can be obtained using the hping3 -Q -p 139 <target> command?  
+A. Firewall rules  
+B. HTTP traffic  
+C. Initial Sequence Number (ISN)  
+D. UDP service banner  
+✅ Correct Answer: C
+
+---
+
+
