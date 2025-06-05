@@ -23,4 +23,30 @@
 | Hping3 - ACK Scan   | How does an ACK scan help identify firewalls?   | Sends ACK packets; RST → port is unfiltered, no response → filtered/firewalled.                                                  |
 | Mobile Tools        | How is Fing useful in a mobile environment?     | Identifies IPs, MACs, vendor details, performs pings, traceroutes, and scans specific ports (SSH, FTP, etc.).                    |
 
+---
+
+### Host Discovery
+| **Question (Front)**                                            | **Answer (Back)**                                                         |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| What scan finds live hosts on LAN using MAC address replies?    | ARP Ping Scan                                                             |
+| Which scan checks if a host is online by sending UDP packets (default port 40, 125)? | UDP Ping Scan                                        |
+| Which scan uses Echo Request to check if a host is online?      | ICMP Echo Ping Scan                                                       |
+| What scan checks a full subnet for live hosts using ICMP Echo Requests? | ICMP Echo Ping Sweep                                              |
+| What ICMP scan checks if a host is alive by requesting its subnet mask? | ICMP Address Mask Ping Scan                                       |
+|  What scan uses TCP SYN to check host status and ends with RST for stealth? | TCP SYN Ping Scan                                             |
+| What scan sends an ACK to detect live hosts, expecting an RST reply? | TCP ACK Ping Scan                                                    |
+
+---
+
+### Port & Services Discovery
+| **Question (Front)**                                            | **Answer (Back)**                                                         |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Which scan uses TCP 3-way handshake and is most detectable?     | TCP Connect (Full Open) Scan                                              |
+| What scan sends SYN and aborts with RST to stay stealthy?       | Stealth Scan (Half-Open / SYN Scan)                                       |
+| What scan sends FIN/NULL/Xmas flags to detect open ports by avoiding replies? | Inverse TCP Flag Scan                                       |
+| What scan uses FIN, URG, and PSH flags and expects no reply if port is open? |  Xmas Scan                                                   |
+| What scan sends ACK and analyzes TTL or Window in RST to find port state? | ACK Flag Probe Scan                                             |
+
+
+
 
