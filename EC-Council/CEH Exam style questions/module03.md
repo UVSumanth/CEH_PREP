@@ -70,6 +70,7 @@ A. hping3 -A -p 22 --flood
 B. hping3 -S <target> -p 22 --flood  
 C. hping3 -2 <target> -p 22  
 D. hping3 -9 http -I eth0  
+
 ✅ Correct Answer: B
 
 ---
@@ -79,6 +80,7 @@ A. No reply from the target
 B. ICMP Port Unreachable message received  
 C. RST packet received  
 D. SYN-ACK response  
+
 ✅ Correct Answer: B
 
 ---
@@ -88,6 +90,7 @@ A. Higher packet payload
 B. Guaranteed port enumeration  
 C. Lower chance of detection by security systems  
 D. Better for scanning mobile networks  
+
 ✅ Correct Answer: C
 
 ---
@@ -96,8 +99,129 @@ D. Better for scanning mobile networks
 A. Firewall rules  
 B. HTTP traffic  
 C. Initial Sequence Number (ISN)  
-D. UDP service banner  
+D. UDP service banner    
+
 ✅ Correct Answer: C
+
+---
+
+### Host Discovery
+**Q1.** What type of scan sends packets that ask for MAC addresses to discover live hosts, bypassing ICMP restrictions?  
+A. TCP Connect Scan  
+B. ARP Ping Scan  
+C. SYN Stealth Scan  
+D. ACK Scan  
+
+✅ Correct Answer: B. ARP Ping Scan
+
+---
+
+**Q2.** Q: What scan sends packets to port 40125 by default to check host availability using the UDP protocol?  
+A. ICMP Echo Scan  
+B. TCP ACK Scan  
+C. UDP Ping Scan  
+D. SYN Stealth Scan  
+
+✅ Correct Answer: C. UDP Ping Scan 
+
+---
+
+**Q3:** What scan type uses Echo Request/Reply to check if a host is live, commonly blocked by firewalls?  
+A. TCP SYN Scan  
+B. ICMP Echo Ping Scan  
+C. UDP Ping Scan  
+D. ACK Scan  
+
+✅ Correct Answer: B. ICMP Echo Ping Scan
+
+---
+
+**Q4:** Which technique sends ICMP Echo Requests to a range of IPs to identify live hosts on a network?  
+A. TCP Connect Scan  
+B. ARP Ping Scan  
+C. ICMP Echo Ping Sweep  
+D. UDP Port Scan  
+
+✅ Correct Answer: C. ICMP Echo Ping Sweep
+
+---
+**Q5:** Which ICMP-based scan requests the subnet mask from a host to determine if it is alive?  
+A. ICMP Echo Ping  
+B. ICMP Timestamp Ping  
+C. ICMP Address Mask Ping  
+D. TCP Null Scan  
+
+✅ Correct Answer: C. ICMP Address Mask Ping 
+
+---
+
+**Q6:** Which scan sends a TCP SYN packet to check if a host is alive and ends with an RST to avoid full connection?  
+A. TCP Connect Scan  
+B. TCP SYN Ping Scan  
+C. ICMP Echo Scan  
+D. UDP Ping Scan  
+
+✅ Correct Answer: B. TCP SYN Ping Scan
+
+---
+
+**Q7:** Which scan sends an ACK packet and considers a host alive if an RST is received in response?  
+A. TCP SYN Ping  
+B. TCP ACK Ping   
+C. UDP Ping  
+D. ICMP Echo Ping  
+
+✅ Correct Answer: B. TCP ACK Ping 
+
+---
+
+### Port and Service Discovery
+**Q1:** Which scan completes a full TCP handshake and is easily logged by the target system?  
+A. TCP SYN Scan  
+B. TCP Connect Scan  
+C. TCP ACK Scan  
+D. UDP Scan  
+
+✅ Correct Answer: B. TCP Connect Scan 
+
+---
+
+**Q2:** Which scan sends a SYN, waits for SYN-ACK, then sends RST instead of completing the handshake?  
+A. TCP Connect Scan  
+B. TCP ACK Scan  
+C. Stealth Scan (SYN Scan)  
+D. UDP Ping Scan  
+
+✅ Correct Answer: C. Stealth Scan (SYN Scan) 
+
+---
+
+**Q3:** Which scanning method uses TCP packets with unusual or no flags to avoid detection by IDS?  
+A. Stealth Scan  
+B. Inverse TCP Flag Scan  
+C. TCP ACK Scan  
+D. UDP Ping Scan  
+
+✅ Correct Answer: B. Inverse TCP Flag Scan
+
+---
+**Q4:** Which scan sets FIN, URG, and PSH flags and relies on no response to detect open ports?  
+A. NULL Scan  
+B. Xmas Scan  
+C. TCP Connect Scan  
+D. ACK Scan  
+
+✅ Correct Answer: B. Xmas Scan
+
+---
+
+**Q5:** Which scan analyzes RST responses (TTL or Window values) to infer port status and bypass IDS?  
+A. TCP Connect Scan  
+B. FIN Scan  
+C. ACK Flag Probe Scan  
+D. UDP Ping Scan  
+
+✅ Correct Answer: C. ACK Flag Probe Scan
 
 ---
 
