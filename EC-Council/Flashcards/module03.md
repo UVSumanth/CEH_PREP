@@ -16,3 +16,11 @@
 | **Metasploit**       | Post-recon tool used for crafting and delivering exploits and testing system vulnerabilities       |
 | **NetScanTools Pro** | Tool used for passive info gathering like hostnames, email addresses, domain info, and IP scanning |
 
+| **Flashcard Topic** | **Question**                                    | **Answer**                                                      |
+| ------------------- | ----------------------------------------------- | ---------------------------------------------------------------- |
+| Nmap                | What is Nmap used for in network scanning?      | Mapping hosts, open ports, services, OS detection. It's a general-purpose and foundational CEH tool.                             |
+| Hping3 - SYN Scan   | What does a SYN scan do and why is it stealthy? | Sends SYN packets to identify open ports without completing the handshake (half-open scan), avoiding detection by IDS/firewalls. |
+| Hping3 - ACK Scan   | How does an ACK scan help identify firewalls?   | Sends ACK packets; RST → port is unfiltered, no response → filtered/firewalled.                                                  |
+| Mobile Tools        | How is Fing useful in a mobile environment?     | Identifies IPs, MACs, vendor details, performs pings, traceroutes, and scans specific ports (SSH, FTP, etc.).                    |
+
+
