@@ -225,4 +225,226 @@ D. UDP Ping Scan
 
 ---
 
+**Q7:** In which scan type is a port considered open if there is no response and considered closed if an ICMP Port Unreachable error is received?  
+A. TCP SYN Scan  
+B. UDP Scan  
+C. TCP ACK Scan   
+D. Null Scan  
+
+✅ Correct Answer: B. UDP Scan
+
+---
+
+**Q8:** Which scan uses INIT and receives INIT+ACK or ABORT to detect SCTP port states?  
+A. TCP ACK Scan  
+B. UDP Scan  
+C. SCTP INIT Scan  
+D. Xmas Scan  
+
+✅ Correct Answer: C. SCTP INIT Scan
+
+---
+
+**Q8:** In which scan does a COOKIE ECHO chunk get sent, and a lack of response could mean the port is open or filtered?  
+A. SCTP INIT Scan  
+B. TCP Connect Scan  
+C. SCTP COOKIE ECHO Scan  
+D. UDP Scan  
+
+✅ Correct Answer: C. SCTP COOKIE ECHO Scan 
+
+---
+
+**Q9:** Which scan detects UPnP devices using multicast messages and is commonly used to find IoT services?  
+A. ACK Scan  
+B. Xmas Scan  
+C. SSDP Scan  
+D. Idle Scan  
+
+✅ Correct Answer: C. SSDP Scan 
+
+---
+
+**Q10:** Which scan performs only reverse DNS lookups without sending actual probe packets?  
+A. TCP Connect Scan  
+B. List Scan   
+C. UDP Scan  
+D. SYN Scan  
+
+✅ Correct Answer: B. List Scan
+
+---
+**Q11:** Why is IPv6 scanning more difficult than IPv4 scanning?  
+A. Lack of tool support  
+B. Smaller address space  
+C. Too many open ports  
+D. Massive address space per subnet 
+
+✅ Correct Answer: D. Massive address space per subnet
+
+---
+
+**Q12:** Which scan technique identifies software versions running on open ports?  
+A. OS Fingerprinting  
+B. SYN Scan  
+C. Service Version Discovery 
+D. ACK Scan  
+
+✅ Correct Answer: C. Service Version Discovery 
+
+---
+
+**Q13:** What Nmap option is used to control scan speed and timing aggressiveness?  
+A. -sA  
+B. -Pn  
+C. -T  
+D. -sC 
+
+✅ Correct Answer: C. -T
+
+---
+
+**Q14:** Which scan technique uses a zombie host with predictable IPID values to perform stealth scanning?  
+A. TCP Connect Scan  
+B. Xmas Scan  
+C. Idle/IPID Scan 
+D. Window Scan  
+
+✅ Correct Answer: C. Idle/IPID Scan
+
+---
+
+### Scanning Techniques for OS Discovery 
+**Q1:** Which technique determines the OS of a remote host by analyzing response behaviors to crafted packets?  
+A. Port Scanning  
+B. OS Fingerprinting 
+C. Banner Filtering  
+D. UDP Scanning  
+
+✅ Correct Answer: B. OS Fingerprinting
+
+---
+
+**Q2:** In passive OS fingerprinting, which packet field is often analyzed?  
+A. Number of open ports  
+B. TTL and Window Size 
+C. MAC address  
+D. DNS records  
+
+✅ Correct Answer: B. TTL and Window Size 
+
+---
+
+**Q3:** Which fields in a TCP/IP packet are most useful for identifying the OS of a target system?  
+A. Source Port and MAC Address  
+B. TTL and TCP Window Size 
+C. DNS Name and Timestamp  
+D. ICMP Type and Code  
+
+✅ Correct Answer: B. TTL and TCP Window Size
+
+---
+
+**Q4:** Which Nmap option is used to perform OS detection by sending crafted packets?  
+A. -sV  
+B. -O   
+C. -sS  
+D. -Pn  
+
+✅ Correct Answer: B. -O
+
+---
+
+**Q5:** What Nmap feature allows the use of scripts like smb-os-discovery to detect OS info?  
+A. -O  
+B. -sV  
+C. Nmap Script Engine 
+D. Passive Scan  
+
+✅ Correct Answer: C. Nmap Script Engine
+
+---
+
+**Q6:** What Nmap option is used for IPv6 OS detection?  
+A. -6 -O  
+B. -sS  
+C. --traceroute  
+D. -sU  
+
+✅ Correct Answer: A. -6 -O
+
+---
+
+###  Scanning Beyond IDS and Firewall
+
+**Q1:** What technique splits a TCP header into smaller packets to evade detection by IDS/firewalls?  
+A. ACK Scan  
+B. Packet Fragmentation  
+C. Window Scan  
+D. NULL Scan  
+
+✅ Correct Answer: B. Packet Fragmentation 
+
+---
+
+**Q2:** What technique allows an attacker to define the path an IP packet should follow to avoid security devices?  
+A. IP Spoofing  
+B. Source Routing  
+C. Packet Fragmentation  
+D. DNS Poisoning  
+
+✅ Correct Answer: B. Source Routing 
+
+---
+
+**Q3:** What technique involves spoofing a packet's source port to bypass firewalls?  
+A. Port Scanning  
+B. Packet Fragmentation  
+C. Source Port Manipulation  
+D. Source Routing  
+
+✅ Correct Answer: C. Source Port Manipulation 
+
+---
+
+**Q4:** Which Nmap option helps in hiding the real IP by using multiple fake IP addresses during scanning?  
+A. -g  
+B. -O  
+C. -D  
+D. -sS  
+
+✅ Correct Answer: C. -D  
+
+---
+
+**Q5:** Which technique involves manually crafting network packets to evade detection systems?  
+A. Banner Grabbing  
+B. Packet Fragmentation  
+C. Custom Packet Creation  
+D. OS Fingerprinting  
+
+✅ Correct Answer: C. Custom Packet Creation 
+
+---
+
+**Q6:** Which technique allows attackers to hide their IP address and avoid detection during reconnaissance?  
+A. Steganography  
+B. Proxy Chaining  
+C. ARP Poisoning  
+D. Packet Sniffing  
+
+✅ Correct Answer: B. Proxy Chaining 
+
+---
+
+### Scanning Countermeasures 
+
+**Q:** Which of the following is a countermeasure to prevent banner grabbing?  
+A. Use SYN flood protection  
+B. Disable ICMP echo requests  
+C. Modify or remove server signature  
+D. Use TCP wrappers only  
+
+✅ Correct Answer: C. Modify or remove server signature  
+
 
