@@ -1,0 +1,136 @@
+NetBIOS Enumeration 
+What It Does: NetBIOS Enumeration allows attackers (or ethical hackers) to extract detailed info from Windows systems, such as:
+Usernames | Shared folders/printers | Computer and domain names | Services running (like Messenger, Server)
+How It Works
+- NetBIOS operates using ports 137 (UDP), 138 (UDP), and 139 (TCP)
+- Attackers use tools like nbtstat or NetBIOS scanners to:
+  - Query name tables
+  - Access shares
+  - Discover usernames and device roles
+Example:
+nbtstat -A <IP>  → Shows remote system’s NetBIOS name table
+nbtstat -c       → Shows local NetBIOS name cache
+NetBIOS names are 16-character strings:
+- First 15 chars: device name
+- 16th char: service code (e.g., <00> for hostname, <20> for server)
+Why It's Used
+Real-World Use (Ethical Hacker):
+- Find accessible shares to assess weak configurations
+- Identify network devices and services
+- Understand domain setup for security audits
+Attacker Use:
+- Exploit weakly secured shares (read/write access)
+- Launch Null Session attacks
+- Run DoS attacks or collect usernames for brute-force attacks
+Tools Used
+- nbtstat (built-in Windows command)
+- NBTscan, Hyena, SoftPerfect Network Scanner
+- Metasploit modules (auxiliary/scanner/netbios/...)
+
+🔢 Example NetBIOS Codes
+Code	Type	Meaning
+<00>	Unique	Hostname
+<03>	Unique	Messenger service for host or user
+<20>	Unique	Server service (used for sharing)
+<1B>	Unique	Domain Master Browser (Primary Domain Ctrlr)
+<1D>	Group	Master browser for subnet
+<1E>	Group	Browser service elections
+===============================================
+NetBIOS Enumeration Tools
+What It Does: These tools scan networks to gather sensitive NetBIOS-related information such as:
+Computer and domain names | Usernames and groups | MAC addresses | NetBIOS shares | Logged-in users
+How It Works
+- Scans a range of IP addresses to detect systems running NetBIOS
+- Uses protocols like SMB to extract system info
+- Some tools rely on Windows APIs; others use Nmap NSE scripts to fetch name tables, MACs, shares
+Why It’s Used
+Real-World Use (Ethical Hacker):
+- Asset inventory and network mapping
+- Validate access control settings
+- Detect unprotected shares
+Attacker Use:
+- Gather usernames for brute-force attacks
+- Access open/unsecured shares
+- Identify weak devices via OS/service enumeration
+🛠️ Common Tools
+Tool	Use
+NetBIOS Enumerator	Lists NetBIOS names, MACs, users, domains for IP ranges
+Nmap + nbstat.nse	Retrieves NetBIOS names and MAC addresses
+Hyena	GUI-based auditing and enumeration of Windows systems
+Advanced IP Scanner	Fast IP range scanning with NetBIOS info
+Global Network Inventory	Lists OS, shares, services
+Nsauditor	Combines enumeration and vulnerability assessment
+
+Example Command : nmap -sV -v --script nbstat.nse <target IP>
+Shows:
+- NetBIOS name
+- Logged-in user
+- MAC address
+If verbose, shows all related NetBIOS names
+===============================================
+Enumerating User Accounts with PsTools
+What It Does: Helps gather user, system, and session info from local or remote Windows systems via command-line utilities. It also allows remote command execution, process control, log viewing, and password reset without needing a GUI.
+How It Works
+- Uses Microsoft’s Sysinternals PsTools suite
+- Connects to remote systems over the network using admin credentials
+- Executes commands like:
+ - Show logged-in users
+ - Kill a process
+ - Retrieve user SID
+ - Change passwords
+ - Shut down or restart remote machines
+Why It's Used
+Real-World Use (Admins & Pen Testers):
+- Perform remote system administration without logging in physically
+- Check who’s logged in, running processes, open files
+- Gather system info for auditing
+Attacker Use:
+- Identify active sessions and user accounts
+- Change or reset passwords on compromised systems
+- Kill security processes or install backdoors
+- Escalate privileges and maintain remote control
+Key PsTools & Their Purposes
+Tool	What It Does
+PsExec	Run commands remotely like Telnet replacement
+PsFile	View/close files opened remotely
+PsGetSid	Find SID of users/accounts or resolve SID to username
+PsKill	Kill processes on local or remote machines
+PsInfo	Display system information (CPU, memory, OS)
+PsList	Shows CPU/memory/thread stats per process
+PsLoggedOn	Shows who is logged in locally/remotely
+PsLogList	Dumps event logs for local/remote computers
+PsPasswd	Reset/change passwords for user accounts
+PsShutdown	Shutdown, reboot, hibernate, or log off remote machines
+[Provide a well structured table]
+Example Commands
+psexec \\192.168.1.10 cmd
+psloggedon \\192.168.1.10
+pskill \\192.168.1.10 notepad.exe
+pspasswd \\192.168.1.10 Administrator NewPass123
+===============================================
+Enumerating Shared Resources Using net view
+What It Does: net view lists shared folders, printers, and computers on a network. It helps identify available network resources in a workgroup or domain.
+How It Works
+- net view is a built-in Windows command-line tool
+- Connects to a specified computer or domain using SMB (port 139/445)
+Displays:
+ - Available shares
+ - Hidden shares (with /ALL)
+ - Other computers in the network or domain
+Common Commands:
+net view \\<computername>        # Lists shared resources on a specific computer
+net view \\<computername> /ALL   # Lists all shares, including hidden ones
+net view /domain                 # Lists all domains/workgroups
+net view /domain:<domainname>   # Lists computers in the specified domain
+Why It's Used
+Real-World Use:
+- Used by network admins to check what resources are shared in a workgroup/domain
+- Helps in auditing shared folders/printers across systems
+Attacker Use:
+- Attackers use it for reconnaissance
+Helps identify:
+- Sensitive shared folders (e.g., Admin$, C$)
+- Poorly protected file shares
+- Systems to target for lateral movement
+
+===============================================
